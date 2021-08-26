@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Điểm</title>
+    <!--Nhúng JS vào html-->
+    <script language="javascript" src="script.js"></script>
+</head>
+
+
+<style>
+    table,
+    tr,
+    th,
+    td {
+        border: 2.2px solid gray;
+        border-collapse: collapse;
+
+    }
+</style>
+
+<body style="background:gainsboro">
+    <!------------------------phần nhập thông tin điểm---------------------- -->
+
+    <div style="width: 100%;">
+        <div
+            style="text-align: center; color:darkgreen; background-color: white; width: 33.33%; margin-left: 33.33%; border-radius: 15%;">
+            <h1 style="text-align: center; color: darkcyan; font-family: 'Courier New', Courier, monospace;">Class
+                Marksheet</h1>
+            <div>
+                <p style="display: inline-block;">Họ tên: &nbsp; &nbsp; &nbsp; </p>
+                <input id="ten" style="display: inline-block;" type="text"></input>
+            </div>
+
+            <div>
+                <p style="display: inline-block;">Điểm toán: </p>
+                <input id="diemtoan" style="display: inline-block;" type="number"></input>
+            </div>
+
+            <div>
+                <p style="display: inline-block;">Điểm lý: &nbsp; &nbsp;</p>
+                <input id="diemly" style="display: inline-block;" type="number"> </input>
+            </div>
+
+            <div>
+                <p style="display: inline-block;">Điểm hóa:&nbsp;</p>
+                <input id="diemhoa" style="display: inline-block;" type="number"></input>
+            </div>
+
+            <br>
+            <div style="text-align: center;">
+                <button onclick="input()">
+                    <b style="color: darkcyan;font-family: 'Courier New', Courier, monospace; font-size: 120%;">&nbsp;
+                        Nhập &nbsp;
+                    </b>
+                </button>
+            </div><br>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!------------------------------------------Phần bảng----------------------------------------------------------->
+    <table id="table" style="width:100%; font-family: 'Courier New', Courier, monospace; background-color:whitesmoke; color:darkslateblue; text-align: center;" cellpadding="5">
+        <tr>
+            <th style="text-align: center; width: 10%;">STT</th>
+            <th style="text-align: center; width: 25%;">Họ tên</th>
+            <th style="text-align: center; width: 15%;">Toán</th>
+            <th style="text-align: center; width: 15%;">Lý</th>
+            <th style="text-align: center; width: 15%;">Hóa</th>
+            <th style="text-align: center; width: 20%;">Điểm Trung bình</th>
+        </tr>
+    </table>
+
+    <br></br>
+
+    <!---------------------------------------CÁC NÚT ------------------------------------------------------>
+    <div style="text-align: center;">
+
+        <button onclick="tinhDiemTrungBinh()">
+            <b style="color:cornflowerblue; font-family: 'Courier New', Courier, monospace; font-size: 120%;">
+                Điểm trung bình</b>
+        </button>
+
+        <button onclick="xacDinhHocSinhGioi()">
+            <b style="color:crimson; font-family: 'Courier New', Courier, monospace; font-size: 120%;">
+                Xác định học sinh giỏi</b>
+        </button>
+
+        <button onclick="sortTable()">
+            <b style="color:cornflowerblue; font-family: 'Courier New', Courier, monospace; font-size: 120%;">
+                Sắp xếp giảm</b>
+        </button>
+
+        <button onclick="sortByMe()">
+            <b style="color:cornflowerblue; font-family: 'Courier New', Courier, monospace; font-size: 120%;">
+                Sắp xếp tăng</b>
+        </button>
+
+    </div>
+
+
+
+</body>
+
+</html>
